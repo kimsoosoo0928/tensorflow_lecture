@@ -21,3 +21,10 @@ print('loss : ', loss)
 
 result = model.predict([4]) 
 print('4의 예측값 : ', result) 
+
+#--------------------------------------------------------------------
+y_predict = model.predict(x)
+
+plt.scatter(x, y)
+plt.plot(x, y_predict, color='red')
+plt.show()
